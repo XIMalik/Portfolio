@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import head from "../assets/headshot.png";
 import left from "../assets/left.png";
-import AOS from "aos";
-import "aos/dist/aos.css"
+// import AOS from "aos";
+// import "aos/dist/aos.css"
 
 
 export default function Intro (){
@@ -21,10 +21,10 @@ export default function Intro (){
         setPersonsName("Lacy")
     }
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-      }, []);
+    // useEffect(() => {
+    //     AOS.init();
+    //     AOS.refresh();
+    //   }, []);
 
     return (
         <div className="h-screen flex sm:grid grid-cols-6 bg-[url('./src/assets/grr.jpg')] bg-cover md:m-10  rounded-md overflow-hidden">
