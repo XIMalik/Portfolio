@@ -20,7 +20,7 @@ function App() {
       <Header className="overflow-hidden" />
       <Intro className="overflow-hidden"/>
       <Contact className="overflow-hidden"/>
-     <div className="lg:grid grid-cols-2 bg-[#161313] gap-5 p-10 mb-2 ease-in duration-300 overflow-hidden">
+     <div className="lg:grid grid-cols-2 bg-[url('./src/assets/star.jpg')] gap-5 p-10 mb-2 ease-in duration-300 overflow-hidden">
                 <div className="text-left pl-5 col-span-2 space-y-2">
                     <h1 className="text-5xl" data-aos= "fade-left" data-aos-duration="300">User Interface Designs</h1>
                     <h1 className="text-lg text-slate-300" data-aos= "fade-left" data-aos-duration="300">Made with Figma</h1>
