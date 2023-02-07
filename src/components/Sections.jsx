@@ -1,15 +1,10 @@
 import React, {useEffect, useRef} from "react"
 import head from "../assets/headshot.png"
-// import AOS from "aos";
-// import "aos/dist/aos.css"
 import left from "../assets/left.png"
 
 
 export default function Section(props){
-    // useEffect(() => {
-    //     AOS.init();
-    //     AOS.refresh();
-    //   }, []);
+
 
       const ref = useRef(null);
 
