@@ -25,7 +25,7 @@ export default function Form(){
     return(
         <div className="lg:grid grid-cols-2 align-center h-screen">
             <div className="hidden lg:block bg-[#161313] p-10 md:h-screen">
-                <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden" data-aos="fade-left"/>
+                <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden"/>
             </div>
             <form ref={form} onSubmit={handleSubmit(data)} className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4">
                 <div className="space-y-2 col-span-2 ">

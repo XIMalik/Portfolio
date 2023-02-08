@@ -6,7 +6,7 @@ export default function Header(){
             <header class="sticky top-0 z-10 shadow-xl w-100% overflow-hidden">
                 <nav class="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-[#161313]">
                     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col"> 
                             <span class="self-left text-xl font-semibold whitespace-nowrap dark:text-white mr-5">Malik Awesu</span>
                             <span class="text-sm text-slate-300">Junior Frontend Developer | UI Designers</span>
                         </div>

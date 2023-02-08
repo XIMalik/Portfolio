@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact(props){
     return(
 
-        <div className="my-10 m-10  rounded-full bg-[url('./src/assets/star.jpg')]" data-aos="fade-up" data-aos-duration="300">
+        <div className="my-10 m-10  rounded-full bg-[url('./src/assets/star.jpg')]">
             <div className="flex justify-center items-center gap-3 rounded-full p-10">
                 <div> 
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="w-16 sm:w-16 ease-out duration-100 hover:scale-105" />
