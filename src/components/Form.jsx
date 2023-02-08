@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useForm } from "react-hook-form"
 import pic2 from "../assets/pic2.jpg"
 import emailjs from "@emailjs/browser"
+import { data } from "autoprefixer";
 
 
 export default function Form(){
@@ -10,23 +11,23 @@ export default function Form(){
 
     const form = useRef();
 
-    const sendEmail = (e) => {
-    e.preventDefault();
+//     const sendEmail = (e) => {
+//     e.preventDefault();
 
-    emailjs.sendForm('service_htqu2g8', 'template_fq4k5y9', form.current, 'TKeBOdyaaEsd3EBUX')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+//     emailjs.sendForm('service_htqu2g8', 'template_fq4k5y9', form.current, 'TKeBOdyaaEsd3EBUX')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//   };
 
     return(
         <div className="lg:grid grid-cols-2 align-center h-screen">
             <div className="hidden lg:block bg-[#161313] p-10 md:h-screen">
                 <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden" data-aos="fade-left"/>
             </div>
-            <form data-aos="fade-left" data-aos-duration="100" ref={form} className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4" onSubmit={sendEmail}>
+            <form ref={form} onSubmit={handleSubmit(data)} className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4">
                 <div className="space-y-2 col-span-2 ">
                     <h1 className="text-2xl md:text-5xl">Get in touch</h1>
                     <p className="text-slate-400">Lets work together on your project</p>
