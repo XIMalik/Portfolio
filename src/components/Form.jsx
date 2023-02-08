@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 //import { useForm } from "react-hook-form"
 import pic2 from "../assets/pic2.jpg"
-import emailjs from "@emailjs/browser"
+//import emailjs from "@emailjs/browser"
 import { data } from "autoprefixer";
 
 
