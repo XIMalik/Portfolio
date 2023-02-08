@@ -8,7 +8,7 @@ export default function Header(){
                     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                         <div class="flex flex-col">
                             <span class="self-left text-xl font-semibold whitespace-nowrap dark:text-white mr-5">Malik Awesu</span>
-                            <span class="text-sm text-slate-300">Junior Frontend Developer | UI Designer</span>
+                            <span class="text-sm text-slate-300">Junior Frontend Developer | UI Designers</span>
                         </div>
                         <div class="flex items-center lg:order-2">
                             <a href="#" class="text-gray-800 dark:text-white bg-[#184BFF] hover:bg-[#3B62EE] focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-[#3B62EE] focus:outline-none dark:focus:ring-gray-800 hidden md:block ease-in duration-200">Resume</a>
