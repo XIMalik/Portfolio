@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useForm } from "react-hook-form"
+//import { useForm } from "react-hook-form"
 import pic2 from "../assets/pic2.jpg"
 import emailjs from "@emailjs/browser"
 import { data } from "autoprefixer";
@@ -7,7 +7,7 @@ import { data } from "autoprefixer";
 
 export default function Form(){
 
-    const {register, handleSubmit, formState: { errors }} = useForm();
+    //const {register, handleSubmit, formState: { errors }} = useForm();
 
     const form = useRef();
 
