@@ -7,7 +7,7 @@ import Form from './components/Form'
 import mercy from "./assets/mercy.png"
 import wheel from "./assets/wheels.png"
 import web from "./assets/iPhone 14 - 1.png"
-import webb from "./assets/iPhone 14 - 2.png"
+import webb from "./assets/iPhone 14 - 3.png"
 import webbb from "./assets/iPhone 14 - 4.png"
 import Contact from './components/Contact'
 
@@ -21,9 +21,12 @@ function App() {
       <Contact className="overflow-hidden"/>
       <Section 
       image = {web}
-      desc = 'Hello world'
+      image2 ={webb}
+      image3 ={webbb}
       title = 'Hello World'
       short = 'With design inspiration from kuda, Cashapp 2 is a mobile banking app that does everything you need.'
+      address = {<Form/>}
+      link = 'Check out cashapp'
       />
 
           
