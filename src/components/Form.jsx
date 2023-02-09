@@ -12,10 +12,8 @@ export default function Form(){
             </div>
 
             <form 
-            netlify
             methof="post" 
             name="contact v1" 
-            data-netlify="true"
             onSubmit="submit"
 
             className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4">
