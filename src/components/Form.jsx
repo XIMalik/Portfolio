@@ -12,6 +12,7 @@ export default function Form(){
             </div>
 
             <form 
+            netlify
             action="post" 
             name="contact v1" 
             data-netlify="true"
