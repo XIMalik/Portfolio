@@ -13,7 +13,7 @@ export default function Form(){
 
             <form 
             netlify
-            action="post" 
+            methof="post" 
             name="contact v1" 
             data-netlify="true"
             onSubmit="submit"
@@ -51,7 +51,7 @@ export default function Form(){
                     <textarea placeholder="Tell me what you have in mind" name="inquiry" id="inquiry" cols="30" rows="5" className="block placeholder-gray-800 focus:outline-none w-full col-span-2 rounded-lg bg-[#201f1f] p-5"></textarea>
                 </div>
                 
-                <button className="text-center col-span-2 bg-slate-900 pt-3 pb-3 rounded-md transition-colors ease-in-out delay-300 duration-300 hover:bg-gradient-to-r from-slate-900 to-pink-500 hover:cursor-pointer" type="submit">Submit</button>
+                <button type="submit" className="text-center col-span-2 bg-slate-900 pt-3 pb-3 rounded-md transition-colors ease-in-out delay-300 duration-300 hover:bg-gradient-to-r from-slate-900 to-pink-500 hover:cursor-pointer">Submit</button>
                 
             </form>
         </div>
