@@ -31,13 +31,14 @@ export default function Form(){
             <div className="hidden lg:block bg-[#161313] p-10 md:h-screen">
                 <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden"/>
             </div>
-            <form method="post" netlify data-netlify="true" name="contact" onSubmit="submit" className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4">
+            <form method="post" data-netlify="true" name="contact v1" onSubmit="submit" className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4">
+                
+                <input type="hidden" name="form-name" value="contact v1"/>
+
                 <div className="space-y-2 col-span-2 field">
                     <h1 className="text-2xl md:text-5xl">Get in touch</h1>
                     <p className="text-slate-400">Lets work together on your project</p>
                 </div>
-
-                <input type="hidden" value="contact"/>
 
                 <div className="gap-5 flex justify-center col-span-2">
                     <div className="w-1/2 space-y-2 field">
