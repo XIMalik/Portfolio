@@ -27,7 +27,7 @@ export default function Form(){
             <div className="hidden lg:block bg-[#161313] p-10 md:h-screen">
                 <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden"/>
             </div>
-            <form className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4">
+            <form className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4" data-netlify="true" name="contact">
                 <div className="space-y-2 col-span-2 ">
                     <h1 className="text-2xl md:text-5xl">Get in touch</h1>
                     <p className="text-slate-400">Lets work together on your project</p>
