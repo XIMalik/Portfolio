@@ -7,31 +7,31 @@ import { data } from "autoprefixer";
 
 export default function Form(){
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
       
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+    //     const myForm = event.target;
+    //     const formData = new FormData(myForm);
         
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        })
-          .then(() => console.log("Form successfully submitted"))
-          .catch((error) => alert(error));
-      };
+    //     fetch("/", {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //       body: new URLSearchParams(formData).toString(),
+    //     })
+    //       .then(() => console.log("Form successfully submitted"))
+    //       .catch((error) => alert(error));
+    //   };
       
-      document
-        .querySelector("form")
-        .addEventListener("submit", handleSubmit);
+    //   document
+    //     .querySelector("form")
+    //     .addEventListener("submit", handleSubmit);
 
     return(
         <div className="lg:grid grid-cols-2 align-center h-screen">
             <div className="hidden lg:block bg-[#161313] p-10 md:h-screen">
                 <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden"/>
             </div>
-            <form onSubmit={handleSubmit} className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4" data-netlify="true" name="contact">
+            <form action="POST" className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4" data-netlify="true" name="contact">
                 <div className="space-y-2 col-span-2 ">
                     <h1 className="text-2xl md:text-5xl">Get in touch</h1>
                     <p className="text-slate-400">Lets work together on your project</p>
@@ -44,18 +44,21 @@ export default function Form(){
                     </div>
                     <div className="w-1/2 space-y-2">
                         <label htmlFor="firstname" className="text-left text-gray-600">Job</label>
-                        <input className="pb-3 pt-3 pl-5 text-zinc-300 block px-4 py-2 w-full rounded placeholder-gray-800 focus:outline-none focus:shadow-md focus:border-10 focus:border-red-500 shadow-slate-900 bg-[#201f1f]" type="text" name="firstname" placeholder="UI Design" />
+                        <input className="pb-3 pt-3 pl-5 text-zinc-300 block px-4 py-2 w-full rounded placeholder-gray-800 focus:outline-none focus:shadow-md focus:border-10 focus:border-red-500 shadow-slate-900 bg-[#201f1f]" type="text" name="job" placeholder="UI Design" />
                     </div>
 
                 </div>
                 <div className="col-span-2 space-y-2">
                     <label htmlFor="mail" className="text-gray-600">Email address</label>
-                    <input className="col-span-2 pb-3 pt-3 pl-5 text-zinc-300 block px-4 py-2 w-full rounded placeholder-gray-800 focus:outline-none focus:shadow-md focus:border-1 focus:border-red-500 shadow-slate-900 bg-[#201f1f]" type="text" placeholder="johndoe@gmail.com" />
+                    <input className="col-span-2 pb-3 pt-3 pl-5 text-zinc-300 block px-4 py-2 w-full rounded placeholder-gray-800 focus:outline-none focus:shadow-md focus:border-1 focus:border-red-500 shadow-slate-900 bg-[#201f1f]" type="text" name="email" placeholder="johndoe@gmail.com" />
                 </div>
                 <div className="col-span-2 space-y-2">
                     <label htmlFor="mail" className="text-gray-600">Drop an inquiry</label>
-                    <textarea className="block placeholder-gray-800 focus:outline-none w-full col-span-2 rounded-lg bg-[#201f1f] p-5" placeholder="Let me know what you have in mind" name="" id="" cols="30" rows="5"></textarea>
+                    <textarea className="block placeholder-gray-800 focus:outline-none w-full col-span-2 rounded-lg bg-[#201f1f] p-5" placeholder="Let me know what you have in mind" name="inquiry" id="" cols="30" rows="5"></textarea>
                 </div>
+                
+                <div className="field" data-netlify-recaptcha="true"></div>
+                
                 <input className="text-center col-span-2 bg-slate-900 pt-3 pb-3 rounded-md transition-colors ease-in-out delay-300 duration-300 hover:bg-gradient-to-r from-slate-900 to-pink-500 hover:cursor-pointer" type="submit"/>
                 {/* <div className="col-span-2 text-block text-center space-y-2">
                     <p className="text-sm text-center colspan-2">{errors.name && <p> ✴︎ Please enter your name</p>}</p>
