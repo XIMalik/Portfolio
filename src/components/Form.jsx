@@ -7,27 +7,31 @@ import { data } from "autoprefixer";
 
 export default function Form(){
 
-    //const {register, handleSubmit, formState: { errors }} = useForm();
-
-    // const form = useRef();
-
-//     const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs.sendForm('service_htqu2g8', 'template_fq4k5y9', form.current, 'TKeBOdyaaEsd3EBUX')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
-//   };
+    const handleSubmit = (event) => {
+        event.preventDefault();
+      
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+        
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => console.log("Form successfully submitted"))
+          .catch((error) => alert(error));
+      };
+      
+      document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
 
     return(
         <div className="lg:grid grid-cols-2 align-center h-screen">
             <div className="hidden lg:block bg-[#161313] p-10 md:h-screen">
                 <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden"/>
             </div>
-            <form className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4" data-netlify="true" name="contact">
+            <form onSubmit={handleSubmit} className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4" data-netlify="true" name="contact">
                 <div className="space-y-2 col-span-2 ">
                     <h1 className="text-2xl md:text-5xl">Get in touch</h1>
                     <p className="text-slate-400">Lets work together on your project</p>
