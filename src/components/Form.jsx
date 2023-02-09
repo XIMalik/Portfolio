@@ -1,39 +1,29 @@
 import React, { useRef } from "react";
-//import { useForm } from "react-hook-form"
 import pic2 from "../assets/pic2.jpg"
-//import emailjs from "@emailjs/browser"
-import { data } from "autoprefixer";
 
 
 export default function Form(){
 
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-      
-    //     const myForm = event.target;
-    //     const formData = new FormData(myForm);
-        
-    //     fetch("/", {
-    //       method: "POST",
-    //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //       body: new URLSearchParams(formData).toString(),
-    //     })
-    //       .then(() => console.log("Form successfully submitted"))
-    //       .catch((error) => alert(error));
-    //   };
-      
-    //   document
-    //     .querySelector("form")
-    //     .addEventListener("submit", handleSubmit);
 
     return(
         <div className="lg:grid grid-cols-2 align-center h-screen">
             <div className="hidden lg:block bg-[#161313] p-10 md:h-screen">
                 <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden"/>
             </div>
-            <form method="post" data-netlify="true" name="contact v1" onSubmit="submit" className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4">
+
+            <form 
+            action="post" 
+            data-netlify="true" 
+            name="contact v1" 
+            onSubmit="submit"
+
+            className="bg-[url('/assets/pic2.png')] grid grid-cols-2 w-fit mx-auto gap-5 p-4">
                 
-                <input type="hidden" name="form-name" value="contact v1"/>
+                <input 
+                type="hidden" 
+                name="form-name" 
+                value="contact v1"
+                />
 
                 <div className="space-y-2 col-span-2 field">
                     <h1 className="text-2xl md:text-5xl">Get in touch</h1>
@@ -65,34 +55,9 @@ export default function Form(){
                 </div>
                 
                 <button className="text-center col-span-2 bg-slate-900 pt-3 pb-3 rounded-md transition-colors ease-in-out delay-300 duration-300 hover:bg-gradient-to-r from-slate-900 to-pink-500 hover:cursor-pointer" type="submit">Submit</button>
-                {/* <div className="col-span-2 text-block text-center space-y-2">
-                    <p className="text-sm text-center colspan-2">{errors.name && <p> ✴︎ Please enter your name</p>}</p>
-                    <p className="text-sm text-center colspan-2">{errors.mail && <p> :\ Invalid email address</p>}</p>
-                    <p className="text-sm text-center colspan-2">{errors.request && <p>  ..Let me know any question you may have</p>}</p>
-                    <p className="text-sm text-center colspan-2">{errors.job && <p>What do you want to build or?</p>}</p>
-                </div> */}
                 
             </form>
         </div>
             
     )
 }
-
-// function App() {
-//     const {
-//       register,
-//       handleSubmit,
-//       formState: { errors },
-//     } = useForm();
-  
-//     return (
-//       <form onSubmit={handleSubmit((data) => console.log(data))}>
-//         <input {...register('firstName')} />
-//         <input {...register('lastName', { required: true })} />
-//         {errors.lastName && <p>Last name is required.</p>}
-//         <input {...register('age', { pattern: /\d+/ })} />
-//         {errors.age && <p>Please enter number for age.</p>}
-//         <input type="submit" />
-//       </form>
-//     );
-//   }
