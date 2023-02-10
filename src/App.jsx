@@ -23,9 +23,9 @@ function App() {
       image = {web}
       image2 ={webb}
       image3 ={webbb}
-      title = 'Hello World'
+      title = 'Cashapp'
       short = 'With design inspiration from kuda, Cashapp 2 is a mobile banking app that does everything you need.'
-      address = {<Form/>}
+      address = ''
       link = 'Check out cashapp'
       />
 
