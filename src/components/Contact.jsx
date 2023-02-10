@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact(props){
     return(
 
-        <div className="my-10 m-10 flex justify-evenly align-center items-center rounded-full bg-[url('./src/assets/star.jpg')]">
+        <div className="my-10 m-10 flex justify-evenly align-center items-center rounded-full border-2 border-solid border-cyan-500 bg-[url('./src/assets/star.jpg')]">
             <div>
                 <h1 className="hidden lg:block text-xl">Technologies I work with</h1>
             </div>

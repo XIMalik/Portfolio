@@ -19,6 +19,7 @@ function App() {
       {/* <Header className="overflow-hidden" /> */}
       <Intro className="overflow-hidden"/>
       <Contact className="overflow-hidden"/>
+      <div className='gap-3'>
       <Section 
       image = {web}
       image2 ={webb}
@@ -28,6 +29,17 @@ function App() {
       address = ''
       link = 'Check out cashapp'
       />
+      <Section 
+      image = {web}
+      image2 ={webb}
+      image3 ={webbb}
+      title = 'Cashapp'
+      short = 'With design inspiration from kuda, Cashapp 2 is a mobile banking app that does everything you need.'
+      address = ''
+      link = 'Check out cashapp'
+      />
+      </div>
+      
 
           
       <Form className="overflow-hidden"/>
