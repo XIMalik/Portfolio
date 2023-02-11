@@ -3,10 +3,6 @@ import head from "../assets/headshot.png";
 import left from "../assets/left.png";
 import start from "../assets/start.jpg";
 
-// import AOS from "aos";
-// import "aos/dist/aos.css"
-
-
 export default function Intro (){
 
     const ref = useRef(null);
