@@ -11,6 +11,7 @@ import web from "./assets/iPhone 14 - 1.png"
 import webb from "./assets/iPhone 14 - 3.png"
 import webbb from "./assets/iPhone 14 - 4.png"
 import Contact from './components/Contact'
+// import {BrowserRouter as Router, Switch, Link} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
