@@ -6,7 +6,7 @@ export default function Form(){
 
 
     return(
-        <div className="lg:grid grid-cols-2 align-center h-screen border-solid border-cyan-800 border-t-2 m-10 pt-5">
+        <div className="lg:grid grid-cols-2 align-center h-screen border-solid border-cyan-800 border-t-2 m-5 pt-5">
             <div className="hidden lg:block bg-[#161313] p-10 md:h-screen">
                 <img src={pic2} alt="" className=" mx-auto md:block object-cover h-[100%] w-[100%] hidden"/>
             </div>

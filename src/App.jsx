@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Intro from './components/Intro'
 import Section from './components/Sections'
 import Form from './components/Form'
+import Display from './components/Display'
 import mercy from "./assets/mercy.png"
 import wheel from "./assets/wheels.png"
 import web from "./assets/iPhone 14 - 1.png"
@@ -19,7 +20,8 @@ function App() {
       {/* <Header className="overflow-hidden" /> */}
       <Intro className="overflow-hidden"/>
       <Contact className="overflow-hidden"/>
-      <div className='gap-3'>
+      <div className='gap-2'>
+        <h1 className='text-center text-2xl text-cyan-500 m-10'>UI DESIGNS</h1>
       <Section 
       image = {web}
       image2 ={webb}
@@ -28,17 +30,9 @@ function App() {
       short = 'With design inspiration from kuda, Cashapp 2 is a mobile banking app that does everything you need.'
       address = ''
       link = 'Check out cashapp'
-      />
-      <Section 
-      image = {web}
-      image2 ={webb}
-      image3 ={webbb}
-      title = 'Cashapp'
-      short = 'With design inspiration from kuda, Cashapp 2 is a mobile banking app that does everything you need.'
-      address = ''
-      link = 'Check out cashapp'
-      />
-      </div>
+      /></div>
+      <Display />
+
       
 
           
